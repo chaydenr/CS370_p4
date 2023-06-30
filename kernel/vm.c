@@ -14,7 +14,7 @@ pagetable_t kernel_pagetable;
 extern char etext[];  // kernel.ld sets this to end of kernel code.
 
 extern char trampoline[]; // trampoline.S
-
+//
 // NEW create prtpgtbl function
 void printTable(pagetable_t pagetable, int level)
 {
