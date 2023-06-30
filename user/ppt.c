@@ -7,7 +7,9 @@
 
 int main(int argc, char *argv[]) 
 {
+    pagetable_t pgtbl = myproc() -> pagetable;
+    int lvl = 0;
     printf("Hello world (from Chayden)");
-
+    printTable(pgtbl, lvl);
     return 0;
 };
