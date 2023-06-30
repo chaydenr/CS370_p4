@@ -89,3 +89,8 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+// NEW add system call definition
+uint64 sys_prtpgtbl(void) {
+  
+}

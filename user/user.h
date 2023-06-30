@@ -22,6 +22,9 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+// NEW
+typedef uint64 *pagetable_t; // add declaration for parameter
+void printTable(pagetable_t pagetable, int level);
 
 // ulib.c
 int stat(const char*, struct stat*);
